@@ -95,7 +95,7 @@ function getData(emoji, skin, set, data) {
   }
 
   if (!Object.keys(emojiData).length) {
-    emojiData = emoji
+    emojiData = {...emoji}
     if (!emojiData.custom) {
       emojiData.custom = true
     }
